@@ -1,1 +1,202 @@
+<!doctype html>
+<html lang="en">
 
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!-- Added the FontAwesome CSS link  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+	<title>IG Photo Feed</title>
+</head>
+
+<body>
+	<div class="container-fluid"> <!-- Use container-fluid for a full width container -->
+		<div class="row"> <!-- Row to encapsulate the navbar -->
+			<div class="col-12"> <!-- Column to ensure navbar spans the full width -->
+				<nav class="navbar navbar-expand-lg bg-light">
+					<div class="container">
+						<a class="navbar-brand d-flex align-items-center" href="#">
+							<i class="fa-brands fa-instagram mr-1"></i>
+							<span>Instagram</span>
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse"
+							data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+							<ul class="navbar-nav align-items-center">
+								<li class="nav-item active">
+									<a class="nav-link" href="#" data-toggle="modal" data-target="#createPostModal">
+										<button class="btn btn-success">
+											Create a new post
+										</button>
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle text-secondary" href="#"
+										id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<i class="fa-solid fa-gear"></i>
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<a class="dropdown-item" href="#">Profile</a>
+										<a class="dropdown-item" href="#">Accessibility</a>
+										<!-- Corrected spelling from "Accesibility" to "Accessibility" -->
+										<a class="dropdown-item" href="#">Privacy and Data</a>
+										<div class="dropdown-divider"></div> <!-- This creates a visual separation -->
+										<a class="dropdown-item" href="#">Log Out</a>
+
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+			<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+				aria-controls="nav-home" aria-selected="true"><i class="fas fa-th"></i></a>
+			<a class="nav-item nav-link" id="nav-feed-tab" data-toggle="tab" href="#feed-tab" role="tab"
+				aria-controls="nav-feed" aria-selected="false"><i class="fas fa-square"></i></a>
+		</div>
+		<div class="tab-content" id="nav-tabContent">
+			<div class="tab-pane fade show active " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				<div class="row ma">
+					<div class="col-md-4 col-sm-6 px-3 my-3 ">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+					</div>
+					<div class="col-md-4 col-sm-6 px-3 my-3 ">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+					</div>
+					<div class="col-md-4 col-sm-6 px-3 my-3 ">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+						<img class="mb-3" src="https://picsum.photos/400/300">
+					</div>
+				</div>
+			</div>
+			<div id="feed-tab" class="tab-pane fade" role="tabpanel" aria-labelledby="feed-tab">
+				<div class="row bg-secondary">
+					<div class="col-md-6 col-sm-8 px-3 mx-auto">
+						<div class="mb-3 mt-3 border bg-light container-fluid rounded">
+							<div class="d-flex">
+								<h3 class="ml-rem"><i>My first post</i></h3>
+								<p class="ml-auto text-secondary"><b>12/14</b></p>
+							</div>
+							<div class="d-flex justify-content-center">
+								<img src="https://picsum.photos/400/300">
+							</div>
+							<div>
+								<h6>777,111 likes</h6>
+								<p>This is the first comment of the first post of the feed and I'm just writing it to
+									have text here. </p>
+							</div>
+							<div class="d-flex">
+								<p><i class="fas fa-hand-spock pr-3"></i>comment...</p><i
+									class="ml-auto fas fa-ellipsis-v"></i>
+							</div>
+						</div>
+						<div class="mb-3 mt-3 border bg-light container-fluid rounded">
+							<div class="d-flex">
+								<h3 class="ml-rem"><i>This is the Second post</h3></i>
+								<p class="ml-auto text-secondary"><b>12/17</b></p>
+							</div>
+							<div class="d-flex justify-content-center">
+								<img src="https://picsum.photos/400/300">
+							</div>
+							<div>
+								<h6>111,777 likes</h6>
+								<p>This is the comment of the second post of the feed and I'm just writing it to have
+									text here. </p>
+							</div>
+							<div class="d-flex">
+								<p><i class="fas fa-hand-spock pr-3"></i>comment...</p><i
+									class="ml-auto fas fa-ellipsis-v"></i>
+							</div>
+
+						</div>
+						<div class="mb-3 mt-3 border bg-light container-fluid rounded">
+							<div class="d-flex">
+								<h3 class="ml-rem"><i>Let's do the last one</i></h3>
+								<p class="ml-auto text-secondary"><b>12/19</b></p>
+							</div>
+							<div class="d-flex justify-content-center">
+								<img src="https://picsum.photos/400/300">
+							</div>
+							<div>
+								<h6>1,777,999 likes</h6>
+								<p>This is the last comment of the last post of the feed and I'm just writing it to have
+									text here. </p>
+							</div>
+							<div class="d-flex">
+								<p><i class="fas fa-hand-spock pr-3"></i>comment...</p><i
+									class="ml-auto fas fa-ellipsis-v"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal" id="createPostModal" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Create a New Post</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<p>Caption:</p>
+							<div class="form-group">
+								<textarea class="form-control" placeholder="Post your comment here." rows="3"
+									style="border: 1px solid;"></textarea>
+							</div>
+							<div class="d-flex justify-content-between mb-3">
+								<button class="btn" type="button">
+									<i class="fa fa-camera"></i> Upload Photo
+								</button>
+								<button class="btn" type="button">
+									<i class="fa fa-map-marker-alt"></i> Maps
+								</button>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-success">Publish</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<!-- Optional JavaScript -->
+			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+				integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+				crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+				integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+				crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+				integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+				crossorigin="anonymous"></script>
